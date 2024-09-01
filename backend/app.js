@@ -6,6 +6,7 @@ const userRoutes = require('./routes/user'); // Importer les routes d'utilisateu
 const stuffRoutes = require('../backend/routes/stuff');
 
 const app = express();
+
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use(express.json()); // Pour parser le JSON des requêtes
