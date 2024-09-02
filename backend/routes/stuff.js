@@ -14,8 +14,8 @@ router.get('/:id', stuffCtrl.getOneBook); // single book
 
 // Authentification requise
 router.post('/', auth, multer, stuffCtrl.createBook);
-router.put('/:id', auth, multer, stuffCtrl.updateBook);
+router.put('/:id', auth, multer, stuffCtrl.modifyBook);
 router.delete('/:id', auth, stuffCtrl.deleteBook);
-router.post('/:id/rating', auth, stuffCtrl.getBestRatingBooks); // For rating notation books /* CREER LE ratingNotation */ 
+router.post('/:id/rating', auth, stuffCtrl.ratingNotation); // For rating notation books
 
 module.exports = router;

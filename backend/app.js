@@ -1,12 +1,13 @@
 // app.js
 const express = require('express');
-const path = require("path")
 const mongoose = require('mongoose');
+const path = require('path');
 const userRoutes = require('./routes/user'); // Importer les routes d'utilisateur
 const stuffRoutes = require('../backend/routes/stuff');
-
 const app = express();
 
+
+// Servir les fichiers statiques du dossier "images"
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use(express.json()); // Pour parser le JSON des requêtes
@@ -29,6 +30,6 @@ mongoose.connect('mongodb+srv://grauxbrayann:Bg10061997@cluster0.st5fa.mongodb.n
 
 // Utiliser les routes d'utilisateur
 app.use('/api/auth', userRoutes);
-app.use("/api/books", stuffRoutes);
+app.use('/api/books', stuffRoutes);
 
 module.exports = app;
