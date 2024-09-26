@@ -1,7 +1,7 @@
 # Mon vieux Grimoire
 Projet n°7 de la formation Développeur Web OpenClassrooms
 
-![alt text](../backend/imagesreadme/16654934257102_DW-P7-Back-end_company-banner.png)
+![alt text](/imagesreadme/16654934257102_DW-P7-Back-end_company-banner.png)
 
 ## Contexte
 
@@ -15,8 +15,8 @@ Développer le back-end du site
 
 ## Spécifications de l'API
 
-![alt text](../backend/imagesreadme/spec1.png)
-![alt text](../backend/imagesreadme/spec2.png)
+![alt text](/imagesreadme/spec1.png)
+![alt text](/imagesreadme/spec2.png)
 
 ## API Errors
 
